@@ -51,3 +51,5 @@ Produces:
 ```
 
 You can see that the 3rd one should be also `true` but it's false
+
+OPA issue: https://github.com/open-policy-agent/opa/issues/2962

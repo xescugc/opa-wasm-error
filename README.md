@@ -29,26 +29,25 @@ This will create a bundle tarball with the WASM binary included, and then unpack
 ## Run the example Node JS code that invokes the WASM binary:
 
 ```bash
-node app.js '{"message": "world"}'
+node app.js
 ```
 Produces:
 ```
-[
+{ message: 'world' } [
   {
     "result": true
   }
 ]
-```
-
-
-```bash
-node app.js '{"message": "not-world"}'
-```
-Produces:
-```
-[
+{ message: 'no-world' } [
+  {
+    "result": false
+  }
+]
+{ message: 'world' } [
   {
     "result": false
   }
 ]
 ```
+
+You can see that the 3rd one should be also `true` but it's false
